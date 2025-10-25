@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jerseys Medellín — Tienda de Camisetas de Fútbol</title>
+  <meta name="description" content="Venta de camisetas de fútbol en Medellín. Nuevas, retro y personalizadas. Envios locales.">
+  <style>
+    :root{--accent:#c0392b;--dark:#222;--muted:#6b6b6b;--card:#fff;--bg:#f5f5f7}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:var(--dark);margin:0}
+    header{background:linear-gradient(90deg,#fff 0,#fff 60%,rgba(240,240,240,0.6));border-bottom:1px solid #e6e6e6}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{height:56px;width:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#e67e22);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    nav{margin-left:auto}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:flex;gap:24px;align-items:center;padding:30px 0}
+    .hero-info{flex:1}
+    .hero h1{margin:0;font-size:36px}
+    .hero p{color:var(--muted);margin:8px 0 18px}
+    .cta{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .hero-image{flex:1;display:flex;justify-content:center}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:18px}
+    .product{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.05);display:flex;flex-direction:column}
+    .product img{width:100%;height:240px;object-fit:cover;border-radius:8px}
+    .product h3{margin:10px 0 6px;font-size:18px}
+    .price{font-weight:800;color:var(--accent)}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+    footer{padding:28px 0;color:var(--muted);font-size:14px}
+    .search-row{display:flex;gap:8px;margin-top:12px}
+    .search-row input{flex:1;padding:10px;border-radius:10px;border:1px solid #e3e3e3}
+    .tags{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .tag{background:#fff;padding:8px 10px;border-radius:999px;border:1px solid #eee;font-size:13px;color:var(--muted)}
+    .contact{background:linear-gradient(180deg,#fff,#fafafa);padding:18px;border-radius:12px;border:1px solid #eee}
+    @media (max-width:700px){.hero{flex-direction:column}.hero-image{order:-1}.hero h1{font-size:26px}.product img{height:180px}}
+
+    /* Instrucciones en comentario: sustituye las imágenes en ./images/ por las tuyas y cambia los textos (nombre, precio, tallas, descripción). */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;gap:12px">
+      <div class="brand">
+        <div class="logo">JM</div>
+        <div>
+          <div style="font-weight:800">Jerseys Medellín</div>
+          <div style="font-size:12px;color:var(--muted)">Camisetas originales y retro</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#productos">Productos</a>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-info">
+        <h1>Las mejores camisetas de fútbol en Medellín</h1>
+        <p>Encuentra camisetas oficiales, réplicas y ediciones retro. Agregamos fotos y tallas según nos las envíes.</p>
+        <div class="search-row">
+          <input type="text" placeholder="Buscar por equipo, año o talla...">
+          <button class="cta">Buscar</button>
+        </div>
+        <div class="tags">
+          <div class="tag">Oficial</div>
+          <div class="tag">Retro</div>
+          <div class="tag">Personalizada</div>
+          <div class="tag">Envío local</div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Sustituye la imagen por la tuya en images/hero.jpg -->
+        <img src="https://images.ecestaticos.com/AI06jUgI-YYlSmdsjEc2UyVtAq8=/0x0:2272x1515/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F195%2F883%2F941%2F195883941a6f9278cf51df124dd476be.jpg" alt="Camisetas de fútbol" style="width:360px;height:240px;object-fit:cover;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.08)">
+      </div>
+    </section>
+
+    <section id="productos">
+      <h2 style="margin-top:30px">Productos destacados</h2>
+      <div class="card-grid">
+        <!-- Reemplaza las rutas images/jersey1.jpg, jersey2.jpg, ... con las fotos que me envíes -->
+        <article class="product">
+          <img src="https://tiendaverde.com.co/cdn/shop/files/AN-EC0703.jpg?v=1737132271" alt="Jersey 1">
+          <h3>Atlético Nacional - Local</h3>
+          <div style="color:var(--muted);font-size:13px">Tallas: S, M, L, XL</div>
+          <div class="meta">
+            <div class="price">$120.000 COP</div>
+            <button class="cta" style="padding:8px 12px;font-size:14px">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="https://www.sportline.com.co/media/catalog/product/i/u/iu5011_apparel-front-center-view.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Jersey 2">
+          <h3>Real Madrid - Local</h3>
+          <div style="color:var(--muted);font-size:13px">Tallas: M, L</div>
+          <div class="meta">
+            <div class="price">$180.000 COP</div>
+            <button class="cta" style="padding:8px 12px;font-size:14px">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="https://static.dafiti.com.co/p/puma-0407-4071072-7-zoom.jpg" alt="Jersey 3">
+          <h3>Portugal - Local</h3>
+          <div style="color:var(--muted);font-size:13px">Tallas: S, M, L, XL, XXL</div>
+          <div class="meta">
+            <div class="price">$140.000 COP</div>
+            <button class="cta" style="padding:8px 12px;font-size:14px">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="https://www.sportline.com.co/media/catalog/product/h/j/hj4589-496_phsfh001-2000.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Jersey 4">
+          <h3>Chelsea - Local</h3>
+          <div style="color:var(--muted);font-size:13px">Tallas: S - XXL</div>
+          <div class="meta">
+            <div class="price">$200.000 COP</div>
+            <button class="cta" style="padding:8px 12px;font-size:14px">Comprar</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="sobre-nosotros" style="margin-top:28px">
+      <h2>Sobre nosotros</h2>
+      <div class="contact" style="margin-top:10px">
+        <p style="margin:0">Jerseys Medellín es una tienda local dedicada a vender camisetas de fútbol originales, réplicas y ediciones retro. Hacemos envíos dentro de Medellín y recogida en punto acordado.</p>
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top:28px">
+      <h2>Contacto</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+        <form class="contact" onsubmit="event.preventDefault();alert('Formulario de contacto enviado (demo)')">
+          <label style="display:block;margin-bottom:8px">Nombre</label>
+          <input required type="text" placeholder="Tu nombre" style="width:100%;padding:10px;border-radius:8px;border:1px solid #eaeaea;margin-bottom:10px">
+          <label style="display:block;margin-bottom:8px">Correo</label>
+          <input required type="email" placeholder="correo@ejemplo.com" style="width:100%;padding:10px;border-radius:8px;border:1px solid #eaeaea;margin-bottom:10px">
+          <label style="display:block;margin-bottom:8px">Mensaje</label>
+          <textarea required rows="4" style="width:100%;padding:10px;border-radius:8px;border:1px solid #eaeaea;margin-bottom:10px" placeholder="Quiero comprar..."></textarea>
+          <button class="cta" type="submit">Enviar</button>
+        </form>
+
+        <div class="contact" style="height:100%">
+          <h4 style="margin-top:0">Información</h4>
+          <p style="margin:6px 0;color:var(--muted)">Tel: +57 300 000 0000</p>
+          <p style="margin:6px 0;color:var(--muted)">Dirección: Medellín, Colombia (punto de recojo a acordar)</p>
+          <p style="margin:6px 0;color:var(--muted)">Horario: Lun - Vie 9:00 - 18:00</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>© Jerseys Medellín — Hecho con ❤️</div>
+      <div style="color:var(--muted)">Política de devoluciones · Términos</div>
+    </div>
+  </footer>
+
+</body>
+</html>
